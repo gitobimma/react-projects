@@ -31,7 +31,7 @@ export const About = () => {
           <div className="skills-container">
             <div className="me">
               <div className="aboutText">
-                <h4 className="introHeading">Kleine Zusammenfassung</h4>
+                <h4 className="introHeading">Lern mich kennen!</h4>
                 <p className="intro">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Adipisci non laborum, culpa cum dolorum ex, aliquam ullam nam

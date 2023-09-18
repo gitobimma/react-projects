@@ -2,6 +2,9 @@
   min-height: 100vh;
   width: 100%;
   background-color: #515151;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #projects-section:before {

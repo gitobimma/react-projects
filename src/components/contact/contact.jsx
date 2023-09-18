@@ -1,10 +1,14 @@
 import "./contact.css";
+import { ContactForm } from "./contactForm";
 
 export const Contact = () => {
   return (
     <div>
       <section id="contact-section">
-        <h2>Hello</h2>
+        <div className="contact-title">
+          <h2>Kontakt</h2>
+        </div>
+        <ContactForm />
       </section>
     </div>
   );
