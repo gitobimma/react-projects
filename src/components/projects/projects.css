@@ -1,0 +1,16 @@
+#projects-section {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #515151;
+}
+
+#projects-section:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("./../../assets/pattern.svg");
+
+  background-repeat: repeat;
+  opacity: 0.08;
+}

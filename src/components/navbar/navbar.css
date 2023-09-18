@@ -1,0 +1,56 @@
+#logo {
+  width: 120px;
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  position: fixed;
+  z-index: 999;
+  transition: all 0.5s ease-in-out;
+  height: 120px;
+}
+
+.header-bg {
+  /* background-color: rgba(255, 153, 0, 0.9);*/
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.45s ease-in-out;
+  border-radius: 70px;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 1%;
+  height: 85px;
+}
+
+#navigation {
+  display: flex;
+  list-style: none;
+}
+#navigation li {
+  cursor: pointer;
+}
+
+.list-item {
+  padding: 2.2rem 3rem;
+  display: inline-block;
+  font-size: 0.9em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.list-item-scroll {
+  color: #333;
+  font-size: 0.8em;
+  padding: 1rem 1.7rem;
+}
+
+.active {
+  color: red;
+}
