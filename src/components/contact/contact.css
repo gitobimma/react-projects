@@ -47,6 +47,19 @@
   font-size: 1em;
 }
 
+#message:focus {
+  border: none;
+  outline: 3px solid rgb(255, 153, 0);
+}
+input:focus {
+  border: none;
+  outline: 3px solid rgb(255, 153, 0);
+}
+
+label {
+  margin-bottom: 5px;
+}
+
 .formField {
   margin-bottom: 2rem;
   display: flex;
@@ -64,6 +77,12 @@ textarea {
   position: relative;
   width: 100%;
   transform: translateY(-5rem);
+}
+
+.contact-text {
+  color: #fff;
+  font-size: 18px;
+  transform: translateY(-2rem);
 }
 
 .contact-title::after {

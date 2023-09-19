@@ -1,0 +1,21 @@
+.footer-container {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+
+.copyright {
+  color: #ff9900;
+  font-weight: 600;
+  font-size: 0.6vw;
+}
+
+.linkedin {
+  width: 1.5vw;
+  cursor: pointer;
+}

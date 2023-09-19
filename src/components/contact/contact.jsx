@@ -8,6 +8,9 @@ export const Contact = () => {
         <div className="contact-title">
           <h2>Kontakt</h2>
         </div>
+        <p className="contact-text">
+          Bitte nutze das untere Formular dazu, mich zu kontaktieren.
+        </p>
         <ContactForm />
       </section>
     </div>

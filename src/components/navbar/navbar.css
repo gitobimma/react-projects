@@ -18,11 +18,11 @@
 .header-bg {
   /* background-color: rgba(255, 153, 0, 0.9);*/
   background-color: rgba(255, 255, 255, 0.9);
-  transition: all 0.45s ease-in-out;
+  transition: all 0.4s ease-in-out;
   border-radius: 70px;
-  width: 70%;
-  margin-left: 15%;
-  margin-top: 1%;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 5px;
   height: 85px;
 }
 

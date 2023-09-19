@@ -85,8 +85,9 @@ export const About = () => {
                 </div>
               </div>
             </div>
-
-            <img className="meImg" src={me} alt="" />
+            <div className="about-image-container">
+              <img className="meImg" src={me} alt="" />
+            </div>
           </div>
 
           <Link to="contact-section" duration={500} offset={-120} smooth={true}>

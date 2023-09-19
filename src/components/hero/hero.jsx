@@ -40,9 +40,8 @@ export const Hero = () => {
             })}
           </h1>
           <p className="hero-text">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
+            Ein auf Frontend spezialisierter Grafikdesigner, UI/UX Designer und
+            Webentwickler.
           </p>
           <div className="arrow">
             <svg className="arrowR" viewBox="0 0 486.81 2089.86">
