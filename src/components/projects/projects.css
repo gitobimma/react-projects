@@ -8,17 +8,6 @@
   flex-direction: column;
 }
 
-#projects-section:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("./../../assets/pattern.svg");
-
-  background-repeat: repeat;
-  opacity: 0.08;
-}
-
 .projects-title {
   color: #fff;
   text-align: center;

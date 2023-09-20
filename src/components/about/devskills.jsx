@@ -4,8 +4,8 @@ import jsicon from "./../../assets/skillslogos/JSICON.svg";
 import reacticon from "./../../assets/skillslogos/REACTICON.svg";
 import fmicon from "./../../assets/skillslogos/FMICON.svg";
 import gsapicon from "./../../assets/skillslogos/GSAPICON.svg";
-import githubicon from "./../../assets/skillslogos/GITHUBICON.svg";
-import wpicon from "./../../assets/skillslogos/WPICON.svg";
+import githubicon from "./../../assets/skillslogos/GITICON.svg";
+import wpicon from "./../../assets/skillslogos/wpiconwhite.svg";
 
 export const DEVSKILLS = [
   {

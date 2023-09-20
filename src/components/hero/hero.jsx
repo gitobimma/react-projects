@@ -22,7 +22,7 @@ export const Hero = () => {
   const { ref } = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start 0", "50% 1"],
+    offset: ["start 0", "48% 1"],
   });
 
   return (

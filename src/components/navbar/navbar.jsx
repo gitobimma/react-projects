@@ -65,7 +65,7 @@ export const Navbar = () => {
                 activeClass="active"
                 duration={600}
                 to="about-section"
-                offset={10}
+                offset={-50}
                 smooth={true}
                 className={
                   listItemColor ? "list-item list-item-scroll" : "list-item"

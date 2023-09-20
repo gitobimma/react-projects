@@ -45,6 +45,7 @@ export const About = () => {
                 </p>
               </div>
               <div className="skills">
+                <h3 className="meine-skills">Skills</h3>
                 <div className="devskills">
                   <h4 className="skillHeading">Development</h4>
                   <ul className="skills-list">
@@ -60,6 +61,7 @@ export const About = () => {
                         custom={index}
                       >
                         {<img className="icon" src={skill.icon}></img>}
+                        {<p className="skill-name">{skill.name}</p>}
                       </motion.li>
                     ))}
                   </ul>
@@ -79,6 +81,7 @@ export const About = () => {
                         custom={index}
                       >
                         {<img className="icon" src={skill.icon}></img>}
+                        {<p className="skill-name">{skill.name}</p>}
                       </motion.li>
                     ))}
                   </ul>
