@@ -11,12 +11,14 @@ export const ProjectTemplate = (props) => {
   });
 
   const moveY = useTransform(scrollYProgress, [0, 0.5, 1], [500, 250, 0]);
+  const scaleValue = useTransform(scrollYProgress, [0, 0.5, 1], [0.4, 0.7, 1]);
+  const opacValue = useTransform(scrollYProgress, [0, 0.5, 1], [0.4, 0.7, 1]);
 
   const { projectName, projectImg, projectDesc, stack } = props.data;
   return (
     <motion.div
       ref={refTarget}
-      style={{ opacity: scrollYProgress, y: moveY, scale: scrollYProgress }}
+      style={{ opacity: scrollYProgress, y: moveY, scale: scaleValue }}
       viewport={{ once: true }}
     >
       <motion.div className="project-container">

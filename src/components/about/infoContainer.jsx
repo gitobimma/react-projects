@@ -30,7 +30,7 @@ export const InfoContainer = () => {
           <h4 className="skillHeading">Entwicklung</h4>
           <ul className="skills-list">
             {DEVSKILLS.map((skill, index) => (
-              <li>
+              <li key={index}>
                 {<img className="icon" src={skill.icon}></img>}
                 {<p className="skill-name">{skill.name}</p>}
               </li>
@@ -41,7 +41,7 @@ export const InfoContainer = () => {
           <h4 className="skillHeading">Design</h4>
           <ul className="skills-list">
             {DESIGNSKILLS.map((skill, index) => (
-              <li>
+              <li key={index}>
                 {<img className="icon" src={skill.icon}></img>}
                 {<p className="skill-name">{skill.name}</p>}
               </li>
