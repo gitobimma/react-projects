@@ -47,6 +47,10 @@
   height: 400px;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.13), 0 1px 4px 0 rgba(0, 0, 0, 0.11);
 }
+.project-container:hover .project-image {
+  transform: rotate(-5deg);
+  transition: all 0.3s ease-in-out;
+}
 
 .project-info {
   width: 50%;
@@ -77,10 +81,6 @@
   object-fit: contain;
   border-radius: 5px;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.13), 0 1px 4px 0 rgba(0, 0, 0, 0.11);
-  transition: all 0.3s ease-in-out;
-}
-.project-image:hover {
-  transform: rotate(-5deg);
   transition: all 0.3s ease-in-out;
 }
 

@@ -1,11 +1,25 @@
 import React from "react";
-import { PROJECTS } from "../projects/projectdb";
+import { useRef } from "react";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 export const ProjectTemplate = (props) => {
+  const refTarget = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: refTarget,
+    offset: ["0 1", "2 1"],
+  });
+
+  const moveY = useTransform(scrollYProgress, [0, 0.5, 1], [500, 250, 0]);
+
   const { projectName, projectImg, projectDesc, stack } = props.data;
   return (
-    <div>
-      <div className="project-container">
+    <motion.div
+      ref={refTarget}
+      style={{ opacity: scrollYProgress, y: moveY, scale: scrollYProgress }}
+      viewport={{ once: true }}
+    >
+      <motion.div className="project-container">
         <div className="project-info">
           <div>
             <h3 className="project-title">{projectName}</h3>
@@ -23,7 +37,7 @@ export const ProjectTemplate = (props) => {
         <div className="project-image-container">
           <img className="project-image" src={projectImg} alt="" />
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
