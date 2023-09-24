@@ -1,14 +1,22 @@
 import LogoW from "./../../assets/LogoWhite.svg";
 import LogoB from "./../../assets/Logo_BW.svg";
-
+import { DotsThreeOutline } from "phosphor-react";
 import { Link } from "react-scroll";
 import "./navbar.css";
 import { useState } from "react";
+import { useRef } from "react";
+import { XCircle } from "phosphor-react";
 
 export const Navbar = () => {
   const [navColor, setNavColor] = useState(false);
   const [listItemColor, setListItemColor] = useState(false);
   const [logoColor, setLogoColor] = useState(false);
+
+  const navRef = useRef();
+  const showNavigation = () => {
+    navRef.current.classList.toggle("responsive_nav");
+    console.log("clicked");
+  };
 
   const changeColor = () => {
     if (window.scrollY >= 120) {
@@ -45,7 +53,7 @@ export const Navbar = () => {
           </a>
         </div>
         <div className="header-right">
-          <ul id="navigation">
+          <ul ref={navRef} className="navigation">
             <li>
               <Link
                 activeClass="active"
@@ -102,8 +110,17 @@ export const Navbar = () => {
                 Contact
               </Link>
             </li>
+            <a
+              className="mobile-menu-icon mobile-menu-close-icon"
+              onClick={showNavigation}
+            >
+              <XCircle></XCircle>
+            </a>
           </ul>
         </div>
+        <a className="mobile-menu-icon" onClick={showNavigation}>
+          <DotsThreeOutline></DotsThreeOutline>
+        </a>
       </div>
     </>
   );
