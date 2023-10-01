@@ -42,7 +42,7 @@ export const About = () => {
   };
 
   return (
-    <div>
+    <div className="about-section-container">
       <section ref={ref2} id="about-section">
         <div className="about-content">
           <div className="about-title">

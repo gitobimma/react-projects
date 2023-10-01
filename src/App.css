@@ -27,3 +27,9 @@ body:before {
   background-repeat: repeat;
   opacity: 0.05;
 }
+
+@media only screen and (max-width: 1024px) {
+  body:before {
+    background-size: 70%;
+  }
+}

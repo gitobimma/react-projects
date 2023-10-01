@@ -18,20 +18,30 @@
   flex-direction: column;
 }
 
-#hero-title {
-  text-align: center;
-  font-size: calc(1rem + 3vw);
-  font-weight: 900;
+.hero-title-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 1.8rem;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 900;
+
+  white-space: nowrap;
   color: #fff;
+  display: inline;
 }
 
 .hero-text {
   text-align: center;
-  font-size: calc(1rem + 0.5vw);
+  font-size: 1.3rem;
   width: 80%;
   margin-bottom: 1.8rem;
   color: #fff;
+  display: inline-block;
 }
 
 span {
@@ -63,8 +73,8 @@ span:hover {
 }
 
 .mouse-scroll {
-  width: 2.1em;
-  height: 4em;
+  width: 2.1rem;
+  height: 4rem;
   border: solid 2px rgb(255, 153, 0);
   border-radius: 30px;
   position: relative;
@@ -113,4 +123,26 @@ span:hover {
 
 .cls-2 {
   fill: #f90;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+  span {
+    color: rgb(255, 153, 0);
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-title span {
+    white-space: nowrap;
+  }
 }

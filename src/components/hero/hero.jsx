@@ -26,16 +26,18 @@ export const Hero = () => {
     <div>
       <section ref={ref} id="hero-section">
         <div className="hero-content">
-          <h1 id="hero-title">
-            Hey, ich bin
-            {greeting.map((letter, index) => {
-              return (
-                <HeroText key={index}>
-                  {letter === " " ? "\u00A0" : letter}
-                </HeroText>
-              );
-            })}
-          </h1>
+          <div className="hero-title-container">
+            <h2 class="hero-title">Hey, ich bin</h2>
+            <h2 class="hero-title">
+              {greeting.map((letter, index) => {
+                return (
+                  <HeroText key={index}>
+                    {letter === " " ? "\u00A0" : letter}
+                  </HeroText>
+                );
+              })}
+            </h2>
+          </div>
           <p className="hero-text">
             Ein auf Frontend spezialisierter Grafikdesigner, UI/UX Designer und
             Webentwickler.
