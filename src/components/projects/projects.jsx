@@ -4,7 +4,7 @@ import { PROJECTS } from "../projects/projectdb";
 
 export const Projects = () => {
   return (
-    <div>
+    <div className="project-section-container">
       <section id="projects-section">
         <div className="projects-title">
           <h2>Projekte</h2>

@@ -7,7 +7,7 @@ export const ProjectTemplate = (props) => {
 
   const { scrollYProgress } = useScroll({
     target: refTarget,
-    offset: ["0 1", "2 1"],
+    offset: ["0 1", "1 1"],
   });
 
   const moveY = useTransform(scrollYProgress, [0, 0.5, 1], [500, 250, 0]);

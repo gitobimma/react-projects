@@ -33,3 +33,9 @@ body:before {
     background-size: 70%;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  body:before {
+    background-size: 100%;
+  }
+}

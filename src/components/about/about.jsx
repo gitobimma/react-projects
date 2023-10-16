@@ -9,20 +9,6 @@ import { useRef } from "react";
 import { ImageContainer } from "./imageContainer";
 import { InfoContainer } from "./infoContainer";
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
-
 export const About = () => {
   const { ref2 } = useRef(null);
 

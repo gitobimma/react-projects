@@ -23,7 +23,7 @@ export const Hero = () => {
   };
 
   return (
-    <div>
+    <div className="hero-section-container">
       <section ref={ref} id="hero-section">
         <div className="hero-content">
           <div className="hero-title-container">
@@ -39,8 +39,8 @@ export const Hero = () => {
             </h2>
           </div>
           <p className="hero-text">
-            Ein auf Frontend spezialisierter Grafikdesigner, UI/UX Designer und
-            Webentwickler.
+            Ein auf Frontend spezialisierter Webentwickler, UI/UX Designer und
+            Grafikdesigner.
           </p>
           <div className="arrow">
             <svg className="arrowR" viewBox="0 0 486.81 2089.86">

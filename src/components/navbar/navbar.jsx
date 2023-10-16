@@ -18,6 +18,11 @@ export const Navbar = () => {
     console.log("clicked");
   };
 
+  const hideNavigation = () => {
+    navRef.current.classList.remove("responsive_nav");
+    console.log("clicked");
+  };
+
   const changeColor = () => {
     if (window.scrollY >= 120) {
       setNavColor(true);
@@ -46,81 +51,87 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className={navColor ? "header header-bg" : "header"}>
-        <div className="header-left">
-          <a href="#">
-            <img src={logoColor ? LogoB : LogoW} id="logo"></img>
+      <div className="headerContainer">
+        <div className={navColor ? "header header-bg" : "header"}>
+          <div className="header-left">
+            <a href="#">
+              <img src={logoColor ? LogoB : LogoW} id="logo"></img>
+            </a>
+          </div>
+          <div className="header-right">
+            <ul ref={navRef} className="navigation">
+              <li>
+                <Link
+                  activeClass="active"
+                  duration={600}
+                  to="hero-section"
+                  offset={-120}
+                  smooth={true}
+                  className={
+                    listItemColor ? "list-item list-item-scroll" : "list-item"
+                  }
+                  onClick={hideNavigation}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClass="active"
+                  duration={600}
+                  to="about-section"
+                  offset={0}
+                  smooth={true}
+                  onClick={hideNavigation}
+                  className={
+                    listItemColor ? "list-item list-item-scroll" : "list-item"
+                  }
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClass="active"
+                  duration={600}
+                  to="projects-section"
+                  offset={0}
+                  smooth={true}
+                  onClick={hideNavigation}
+                  className={
+                    listItemColor ? "list-item list-item-scroll" : "list-item"
+                  }
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClass="active"
+                  duration={600}
+                  to="contact-section"
+                  offset={-80}
+                  smooth={true}
+                  onClick={hideNavigation}
+                  className={
+                    listItemColor ? "list-item list-item-scroll" : "list-item"
+                  }
+                >
+                  Contact
+                </Link>
+              </li>
+              <a
+                className="mobile-menu-icon mobile-menu-close-icon"
+                onClick={showNavigation}
+              >
+                <XCircle></XCircle>
+              </a>
+            </ul>
+          </div>
+          <a className="mobile-menu-icon" onClick={showNavigation}>
+            <DotsThreeOutline></DotsThreeOutline>
           </a>
         </div>
-        <div className="header-right">
-          <ul ref={navRef} className="navigation">
-            <li>
-              <Link
-                activeClass="active"
-                duration={600}
-                to="hero-section"
-                offset={-120}
-                smooth={true}
-                className={
-                  listItemColor ? "list-item list-item-scroll" : "list-item"
-                }
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                duration={600}
-                to="about-section"
-                offset={-50}
-                smooth={true}
-                className={
-                  listItemColor ? "list-item list-item-scroll" : "list-item"
-                }
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                duration={600}
-                to="projects-section"
-                offset={-120}
-                smooth={true}
-                className={
-                  listItemColor ? "list-item list-item-scroll" : "list-item"
-                }
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                duration={600}
-                to="contact-section"
-                offset={-120}
-                smooth={true}
-                className={
-                  listItemColor ? "list-item list-item-scroll" : "list-item"
-                }
-              >
-                Contact
-              </Link>
-            </li>
-            <a
-              className="mobile-menu-icon mobile-menu-close-icon"
-              onClick={showNavigation}
-            >
-              <XCircle></XCircle>
-            </a>
-          </ul>
-        </div>
-        <a className="mobile-menu-icon" onClick={showNavigation}>
-          <DotsThreeOutline></DotsThreeOutline>
-        </a>
       </div>
     </>
   );

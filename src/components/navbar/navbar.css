@@ -66,9 +66,15 @@
   .mobile-menu-icon {
     display: inline-block;
   }
+  .headerContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
   .header {
-    padding: 1rem 2rem;
+    padding: 2% 5%;
+    max-width: 100%;
   }
 
   .header-bg {
@@ -85,6 +91,7 @@
 
   .navigation {
     position: fixed;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
