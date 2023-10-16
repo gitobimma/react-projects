@@ -2,8 +2,8 @@
   position: fixed;
   z-index: 9999;
   bottom: 0;
-  right: 0;
-  width: 100%;
+  left: 0;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   padding: 1rem 5rem;

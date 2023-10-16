@@ -2,6 +2,10 @@
   width: calc(5rem + 2vw);
 }
 
+.headerContainer {
+  position: relative;
+  z-index: 999;
+}
 .header {
   box-sizing: border-box;
   width: 100%;
@@ -17,7 +21,7 @@
 
 .header-bg {
   /* background-color: rgba(255, 153, 0, 0.9);*/
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   transition: all 0.4s ease-in-out;
   border-radius: 70px;
   width: 75%;
@@ -58,6 +62,9 @@
   cursor: pointer;
   display: none;
   color: #fff;
+}
+.mobile-menu-icon-scroll {
+  color: #333;
 }
 
 /* MEDIA QUERIES */

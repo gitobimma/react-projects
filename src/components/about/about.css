@@ -1,5 +1,5 @@
 #about-section {
-  max-width: 100%;
+  max-width: 100vw;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -374,5 +374,14 @@
 
   .skills-list li {
     width: 45%;
+  }
+  .arrowL {
+    width: 70%;
+    height: 1200px;
+    left: -30%;
+    bottom: -15%;
+    padding-top: 5px;
+    position: absolute;
+    opacity: 0.5;
   }
 }

@@ -11,6 +11,7 @@ export const Navbar = () => {
   const [navColor, setNavColor] = useState(false);
   const [listItemColor, setListItemColor] = useState(false);
   const [logoColor, setLogoColor] = useState(false);
+  const [iconColor, setIconColor] = useState(false);
 
   const navRef = useRef();
   const showNavigation = () => {
@@ -44,10 +45,18 @@ export const Navbar = () => {
       setLogoColor(false);
     }
   };
+  const changeMenuIcon = () => {
+    if (window.scrollY >= 120) {
+      setIconColor(true);
+    } else {
+      setIconColor(false);
+    }
+  };
 
   window.addEventListener("scroll", changeColor);
   window.addEventListener("scroll", changeListItemColor);
   window.addEventListener("scroll", changeLogo);
+  window.addEventListener("scroll", changeMenuIcon);
 
   return (
     <>
@@ -128,7 +137,14 @@ export const Navbar = () => {
               </a>
             </ul>
           </div>
-          <a className="mobile-menu-icon" onClick={showNavigation}>
+          <a
+            className={
+              iconColor
+                ? "mobile-menu-icon mobile-menu-icon-scroll"
+                : "mobile-menu-icon"
+            }
+            onClick={showNavigation}
+          >
             <DotsThreeOutline></DotsThreeOutline>
           </a>
         </div>
