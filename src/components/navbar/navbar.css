@@ -4,7 +4,7 @@
 
 .headerContainer {
   position: relative;
-  z-index: 999;
+  z-index: 9999;
 }
 .header {
   box-sizing: border-box;

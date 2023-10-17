@@ -40,9 +40,9 @@
 
 .intro {
   text-align: left;
-
+  font-size: 1rem;
   color: #fff;
-  font-size: 1em;
+
   width: 100%;
   margin-bottom: 2rem;
   margin-left: 5px;
@@ -96,7 +96,7 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  padding: 1rem 0 0 3rem;
+  padding: 1rem 0 0 0;
   z-index: 99;
   position: relative;
   margin-top: 3rem;
@@ -131,7 +131,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  padding: 1rem 2rem;
+  padding: 2% 4%;
   margin: 5px;
   font-weight: bold;
   overflow: hidden;
@@ -139,12 +139,13 @@
   filter: grayscale(100);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  z-index: 999;
 }
 
 .skills-list li:hover {
   filter: grayscale(0);
   transition: filter 0.3s ease-in-out;
-  outline: 1px solid rgb(255, 153, 0);
+  outline: 1px solid #ff9900;
 }
 
 .skills-list li:before {
@@ -156,12 +157,15 @@
   background-image: url("../../assets/pattern.svg");
   background-repeat: repeat;
   opacity: 1;
+  z-index: 999;
 }
 
 .icon {
   width: 30px;
   height: 30px;
   margin-right: 5px;
+  position: relative;
+  z-index: 999;
 }
 
 .skill-name {
@@ -214,6 +218,7 @@
   bottom: -38vh;
   padding-top: 5px;
   position: absolute;
+  z-index: 99;
 }
 .cls-1-1 {
   fill: none;
@@ -330,10 +335,11 @@
   }
 
   .arrowL {
-    width: 50%;
-    height: 1000px;
+    width: 40%;
+    height: 800px;
     left: -10%;
-
+    top: 60%;
+    z-index: 9;
     padding-top: 5px;
     position: absolute;
     opacity: 0.5;
@@ -379,9 +385,10 @@
     width: 70%;
     height: 1200px;
     left: -30%;
-    bottom: -15%;
-    padding-top: 5px;
+    top: 53%;
+    z-index: 9;
     position: absolute;
     opacity: 0.5;
+    transform: rotate(15deg);
   }
 }

@@ -7,28 +7,32 @@ import { useRef } from "react";
 export const Hero = () => {
   const greeting = " Igor Obimma".split("");
   const { ref } = useRef(null);
+  const isMobile = window.window.innerWidth < 480;
+  let opacityVariants = {};
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start 0", "45% 1"],
   });
 
-  const opacityVariants = {
-    initial: {
-      opacity: 0,
-      offset: "50%",
-    },
-    animate: {
-      opacity: 1,
-    },
-  };
-
+  if (!isMobile) {
+    opacityVariants = {
+      initial: {
+        opacity: 0,
+        offset: "50%",
+      },
+      animate: {
+        opacity: 1,
+      },
+    };
+  }
   return (
     <div className="hero-section-container">
       <section ref={ref} id="hero-section">
         <div className="hero-content">
           <div className="hero-title-container">
-            <h2 class="hero-title">Hey, ich bin</h2>
-            <h2 class="hero-title">
+            <h2 className="hero-title">Hey, ich bin</h2>
+            <h2 className="hero-title">
               {greeting.map((letter, index) => {
                 return (
                   <HeroText key={index}>
