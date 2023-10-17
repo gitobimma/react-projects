@@ -8,7 +8,7 @@
 }
 
 .about-content {
-  width: 70%;
+  width: 60%;
   margin-top: 2rem;
   border-radius: 5px;
   display: flex;
@@ -40,10 +40,10 @@
 
 .intro {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #fff;
 
-  width: 100%;
+  width: 90%;
   margin-bottom: 2rem;
   margin-left: 5px;
 }
@@ -121,6 +121,7 @@
 
 .skills-list {
   list-style: none;
+  width: 100%;
   padding: 0;
   display: flex;
   flex-wrap: wrap;

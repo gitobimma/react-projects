@@ -2,6 +2,10 @@
   width: calc(5rem + 2vw);
 }
 
+.active {
+  color: red;
+}
+
 .headerContainer {
   position: relative;
   z-index: 9999;

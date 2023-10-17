@@ -14,14 +14,15 @@ export const InfoContainer = () => {
       <div className="aboutText">
         <h4 className="introHeading">Lern mich kennen!</h4>
         <p className="intro">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non
-          laborum, culpa cum dolorum ex, aliquam ullam nam similique nesciunt
-          magni impedit consectetur dignissimos consequatur deserunt nulla
-          repellendus ut nisi nobis quam veritatis commodi. Obcaecati excepturi
-          totam unde cumque, hic repellat eligendi aliquam quos tempore nulla
-          enim ipsum nihil et fugiat voluptates consequuntur! Praesentium minus
-          non deleniti! Impedit doloribus veritatis, tempore laborum ipsa illo
-          voluptate ullam.
+          Ich bin ein freiberuflicher Frontend Web Developer, mit umfangreicher
+          Erfahrung in der Gestaltung und Entwicklung von Websites mit WordPress
+          und und React. Schauen Sie sich einige meiner Arbeiten im
+          Projekte-Bereich an.
+          <br />
+          <br /> Ich stehe für Jobmöglichkeiten offen, bei denen ich dazu
+          beitragen, lernen und wachsen kann. Wenn Sie eine gute Gelegenheit
+          haben, die zu meinen Fähigkeiten und meiner Erfahrung passt, zögern
+          Sie nicht, mich zu kontaktieren.
         </p>
       </div>
       <div className="skills">
