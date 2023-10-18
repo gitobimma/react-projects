@@ -51,9 +51,20 @@ export const Hero = () => {
               <defs>
                 <style></style>
               </defs>
-              <title>arrowRight</title>
+
               <g id="Ebene_2" data-name="Ebene 2">
                 <g id="Ebene_1-2" data-name="Ebene 1">
+                  <motion.text
+                    className="arrow-text1"
+                    x="100"
+                    y="30"
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ margin: "0px 0px -73% 0px" }}
+                    variants={opacityVariants}
+                  >
+                    Start here
+                  </motion.text>
                   <motion.path
                     pathLength={scrollYProgress}
                     className="cls-1"

@@ -45,9 +45,20 @@ export const About = () => {
 
         <svg className="arrowL" viewBox="0 0 757.76 2089.45">
           <defs></defs>
-          <title>ArrL</title>
+
           <g id="Ebene_2" data-name="Ebene 2">
             <g id="Ebene_1-2" data-name="Ebene 1">
+              <motion.text
+                className="arrow-text2"
+                x="20"
+                y="30"
+                initial="initial"
+                whileInView="animate"
+                viewport={{ margin: "0px 0px -27% 0px" }}
+                variants={opacityVariants}
+              >
+                Keep Going!
+              </motion.text>
               <motion.path
                 pathLength={scrollYProgress}
                 className="cls-1-1"

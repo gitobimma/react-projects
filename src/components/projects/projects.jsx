@@ -41,7 +41,7 @@ export const Projects = () => {
             viewBox="0 0 420.8 1188.16"
           >
             <defs></defs>
-            <title>arrowMidLeft</title>
+
             <g id="Ebene_2" data-name="Ebene 2">
               <g id="Ebene_1-2" data-name="Ebene 1">
                 <motion.path
@@ -86,7 +86,7 @@ export const Projects = () => {
             viewBox="0 0 420.8 1188.16"
           >
             <defs></defs>
-            <title>arrowMidRight</title>
+
             <g id="Ebene_2" data-name="Ebene 2">
               <g id="Ebene_1-2" data-name="Ebene 1">
                 <motion.path
@@ -122,6 +122,17 @@ export const Projects = () => {
                   className="cls-3"
                   d="M410.56,1188.16c-6.82-10-17.19-22-26.69-28.62l20.12,2.11,16.81-11.25C415.5,1160.71,411.91,1176.12,410.56,1188.16Z"
                 />
+                <motion.text
+                  className="arrow-text"
+                  x="50"
+                  y="30"
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ margin: "0px 0px -27% 0px" }}
+                  variants={opacityVariants}
+                >
+                  Its getting hot!
+                </motion.text>
               </g>
             </g>
           </svg>
