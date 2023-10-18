@@ -190,7 +190,7 @@
 }
 
 .about-button {
-  z-index: 99;
+  z-index: 9998;
   position: relative;
   color: #333;
   text-transform: uppercase;
@@ -219,7 +219,7 @@
   bottom: -38vh;
   padding-top: 5px;
   position: absolute;
-  z-index: 99;
+  z-index: 9;
 }
 .cls-1-1 {
   fill: none;
