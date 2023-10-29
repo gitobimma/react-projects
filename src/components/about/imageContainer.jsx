@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import "./about.css";
-import me from "../../assets/igor-meltingorange.webp";
+import me from "./../../../public/igor-meltingorange.webp";
 import { useRef } from "react";
 
 export const ImageContainer = () => {

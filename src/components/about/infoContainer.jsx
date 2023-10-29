@@ -3,10 +3,6 @@ import "./about.css";
 import { DEVSKILLS } from "./devskills";
 import { DESIGNSKILLS } from "./designskills";
 import { Link } from "react-scroll";
-import { motion, useTransform } from "framer-motion";
-import me from "../../assets/igor-meltingorange.webp";
-import { useScroll, useSpring } from "framer-motion";
-import { useRef } from "react";
 
 export const InfoContainer = () => {
   return (
