@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import "./about.css";
-import me from "./../../../public/igor-meltingorange.webp";
+// import me from "./../../assets/igor-meltingorange.webp";
 import { useRef } from "react";
 
 export const ImageContainer = () => {
@@ -20,7 +20,7 @@ export const ImageContainer = () => {
       style={{ opacity: scrollYProgress, y: moveY }}
       className="about-image-container"
     >
-      <img className="meImg" src={me} alt="me-image" />
+      <img className="meImg" src="/igor-meltingorange.webp" alt="me-image" />
     </motion.div>
   );
 };
