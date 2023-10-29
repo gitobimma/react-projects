@@ -1,44 +1,44 @@
-import htmlIcon from "./../../assets/skillslogos/HTMLICON.svg";
-import cssicon from "./../../assets/skillslogos/CSSICON.svg";
-import jsicon from "./../../assets/skillslogos/JSICON.svg";
-import reacticon from "./../../assets/skillslogos/REACTICON.svg";
-import fmicon from "./../../assets/skillslogos/FMICON.svg";
-import gsapicon from "./../../assets/skillslogos/GSAPICON.svg";
-import githubicon from "./../../assets/skillslogos/GITICON.svg";
-import wpicon from "./../../assets/skillslogos/wpiconwhite.svg";
+// import htmlIcon from "./../../assets/skillslogos/HTMLICON.svg";
+// import cssicon from "./../../assets/skillslogos/CSSICON.svg";
+// import jsicon from "./../../assets/skillslogos/JSICON.svg";
+// import reacticon from "./../../assets/skillslogos/REACTICON.svg";
+// import fmicon from "./../../assets/skillslogos/FMICON.svg";
+// import gsapicon from "./../../assets/skillslogos/GSAPICON.svg";
+// import githubicon from "./../../assets/skillslogos/GITICON.svg";
+// import wpicon from "./../../assets/skillslogos/wpiconwhite.svg";
 
 export const DEVSKILLS = [
   {
     name: "HTML",
-    icon: htmlIcon,
+    icon: "./skillslogos/HTMLICON.svg",
   },
   {
     name: "CSS",
-    icon: cssicon,
+    icon: "./skillslogos/CSSICON.svg",
   },
   {
     name: "Javascript",
-    icon: jsicon,
+    icon: "./skillslogos/JSICON.svg",
   },
   {
     name: "React",
-    icon: reacticon,
+    icon: "./skillslogos/REACTICON.svg",
   },
   {
     name: "Framer Motion",
-    icon: fmicon,
+    icon: "./skillslogos/FMICON.svg",
   },
   {
     name: "GSAP",
-    icon: gsapicon,
+    icon: "./skillslogos/GSAPICON.svg",
   },
   {
     name: "Github",
-    icon: githubicon,
+    icon: "./skillslogos/GITICON.svg",
   },
 
   {
     name: "Wordpress",
-    icon: wpicon,
+    icon: "./skillslogos/wpiconwhite.svg",
   },
 ];

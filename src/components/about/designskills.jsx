@@ -1,23 +1,23 @@
-import psicon from "./../../assets/skillslogos/PSICON.svg";
-import isicon from "./../../assets/skillslogos/ISICON.svg";
-import figmaicon from "./../../assets/skillslogos/FIGMAICON2.svg";
-import pcicon from "./../../assets/skillslogos/PCICON.png";
+// import psicon from "./../../assets/skillslogos/PSICON.svg";
+// import isicon from "./../../assets/skillslogos/ISICON.svg";
+// import figmaicon from "./../../assets/skillslogos/FIGMAICON2.svg";
+// import pcicon from "./../../assets/skillslogos/PCICON.png";
 
 export const DESIGNSKILLS = [
   {
     name: "Photoshop",
-    icon: psicon,
+    icon: "./skillslogos/PSICON.svg",
   },
   {
     name: "Illustrator",
-    icon: isicon,
+    icon: "./skillslogos/ISICON.svg",
   },
   {
     name: "Figma",
-    icon: figmaicon,
+    icon: "./skillslogos/FIGMAICON2.svg",
   },
   {
     name: "Procreate",
-    icon: pcicon,
+    icon: "./skillslogos/PCICON.png",
   },
 ];

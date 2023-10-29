@@ -1,9 +1,9 @@
-import website from "../../assets/websiteScreenshot.webp";
+// import website from "../../assets/websiteScreenshot.webp";
 
 export const PROJECTS = [
   {
     projectName: "Persönliche Webseite",
-    projectImg: website,
+    projectImg: "./websiteScreenshot.webp",
     projectDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae et molestias consectetur ipsum sunt? Cupiditate ex adipisci rem suscipit!",
     stack: [

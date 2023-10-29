@@ -1,5 +1,5 @@
-import LogoW from "./../../assets/LogoWhite.svg";
-import LogoB from "./../../assets/Logo_BW.svg";
+// import LogoW from "./LogoWhite.svg";
+// import LogoB from "./../../assets/Logo_BW.svg";
 import { DotsThreeOutline } from "phosphor-react";
 import { Link } from "react-scroll";
 import "./navbar.css";
@@ -64,7 +64,10 @@ export const Navbar = () => {
         <div className={navColor ? "header header-bg" : "header"}>
           <div className="header-left">
             <a href="#">
-              <img src={logoColor ? LogoB : LogoW} id="logo"></img>
+              <img
+                src={logoColor ? "./Logo_BW.svg" : "./LogoWhite.svg"}
+                id="logo"
+              ></img>
             </a>
           </div>
           <div className="header-right">
