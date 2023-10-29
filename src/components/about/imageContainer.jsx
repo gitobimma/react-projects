@@ -20,7 +20,7 @@ export const ImageContainer = () => {
       style={{ opacity: scrollYProgress, y: moveY }}
       className="about-image-container"
     >
-      <img className="meImg" src="/igor-meltingorange.webp" alt="me-image" />
+      <img className="meImg" src="./igor-meltingorange.webp" alt="me-image" />
     </motion.div>
   );
 };
