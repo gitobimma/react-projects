@@ -16,6 +16,7 @@ export const Hero = () => {
   });
 
   if (!isMobile) {
+    console.log("isnotmobile");
     opacityVariants = {
       initial: {
         opacity: 0,
@@ -71,18 +72,18 @@ export const Hero = () => {
                     d="M308.38,14.5c39.37,32,90.07,83.49,117.3,158.38,66.21,182.06-86.86,280.75-49.55,515.61,23.72,149.28,99.23,195.44,71.08,324.76-5.71,26.24-26.74,105.29-97.21,166-74.63,64.3-209.82,110.83-289.79,48-41.63-32.71-70.27-96.62-56-155,10.79-44.15,42.43-70.06,57-82,54.92-45,126.5-53.18,174-46,133.8,20.2,213.19,182.87,238,285,39.21,161.43-10.4,367.34-138,449-70.88,45.35-144.84,39-162,93-17.89,56.28,54.62,98.46,48.79,172-4.59,58-54.85,102.86-103.88,134.22"
                   />
                   <motion.path
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{ margin: "0px 0px -65% 0px" }}
-                    variants={opacityVariants}
+                    // initial="initial"
+                    // whileInView="animate"
+                    // viewport={{ margin: "0px 0px -65% 0px" }}
+                    // variants={opacityVariants}
                     className="cls-2"
                     d="M299.53,26.79a15,15,0,1,1,21.14-2.37A15,15,0,0,1,299.53,26.79Z"
                   />
                   <motion.path
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{ margin: "0px 0px -60% 0px" }}
-                    variants={opacityVariants}
+                    // initial="initial"
+                    // whileInView="animate"
+                    // viewport={{ margin: "0px 0px -60% 0px" }}
+                    // variants={opacityVariants}
                     className="cls-2"
                     d="M119.89 2058.87 122.27 2074.79 135.38 2084.13 97.7 2089.86 119.89 2058.87z"
                   />
