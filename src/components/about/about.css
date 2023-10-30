@@ -72,7 +72,7 @@
   width: 100%;
   min-height: 100%;
   background-size: 30%;
-  background-image: url("../../../pattern.svg");
+  background-image: url("../../pattern.svg");
   background-repeat: repeat;
   opacity: 0.09;
 }
