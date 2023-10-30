@@ -66,6 +66,8 @@ span:hover {
   background-position: right bottom;
   transition: all 0.6s ease-in-out;
   font-size: 1rem;
+  position: relative;
+  z-index: 999;
 }
 
 .hero-button:hover {
