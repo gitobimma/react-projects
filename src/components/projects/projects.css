@@ -131,7 +131,7 @@
 .arrow-text {
   fill: #f90;
   font-weight: bold;
-  font-family: Satoshi;
+  font-family: "Satoshi", sans-serif;
   font-size: 2.2em;
 }
 
